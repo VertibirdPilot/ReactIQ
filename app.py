@@ -21,6 +21,7 @@ stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
 app = Flask(__name__)
+            
 
 # Load sentiment analysis model
 sentiment_model, tfidf_vectorizer = None, None
@@ -154,6 +155,7 @@ def predict():
                 cheated=0, attracted=0, singledout=0, anxious=0,
                 error_message="No tweets found or error fetching tweets."
             )
+        
 
         predicted_sentiments, cleaned_tweets, original_tweets = [], [], []
 
@@ -196,7 +198,8 @@ def predict():
         )
 
     return render_template("index.html")
-
+    
 
 if __name__ == "__main__":
     app.run(debug=True, use_reloader=False, host="0.0.0.0")
+        
