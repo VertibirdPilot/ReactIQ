@@ -15,9 +15,9 @@
         // Pie Chart (Sentiment)
         var sentimentData = google.visualization.arrayToDataTable([
           ['Text Sentiment', 'Sentiment'],
-          ['Positive', {{ P|default(0)|int }}],
-          ['Negative', {{ N|default(0)|int }}],
-          ['Neutral', {{ NU|default(0)|int }}]
+          ['Positive', 0],
+          ['Negative', 0],
+          ['Neutral', 0]
         ]);
 
         var pieOptions = {
