@@ -206,3 +206,9 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #40E0D0;
 } 
+body { font-family: Arial, sans-serif; background:#f7f7f7; }
+.container { max-width:700px; margin:40px auto; background:white; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+textarea { width:100%; padding:10px; font-size:1rem; }
+button { padding:10px 18px; margin-top:10px; font-size:1rem; cursor:pointer; }
+.result { margin-top:20px; background:#f1f1f1; padding:12px; border-radius:6px; }
+.error { color:red; margin-top:10px; }
