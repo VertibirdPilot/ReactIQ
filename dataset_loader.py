@@ -14,7 +14,7 @@ def load_dataset(path: str) -> pd.DataFrame:
     label_col = next((c for c in df.columns if c.lower() in POSSIBLE_LABEL_COLS), None)
 
     if text_col is None or label_col is None:
-        # fallback: try heuristics
+        
         for c in df.columns:
             if df[c].dtype == object and text_col is None:
                 text_col = c
